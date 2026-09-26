@@ -1,0 +1,22 @@
+Chuỗi thao tác: union(0, 1), union(0, 2), ..., union(0, n-1)
+
+(a) Số thành phần liên thông:
+- Đáp án: 1
+- Giải thích: Vì đỉnh 0 được nối lần lượt với tất cả các đỉnh còn lại từ 1 đến n-1, nên tất cả n phần tử sẽ gộp chung vào 1 tập hợp duy nhất.
+
+(b) Quick-find (Số lần cập nhật mảng):
+- Đáp án: ~ n^2 / 2
+- Giải thích: 
+  + union(0, 1) cập nhật 1 lần
+  + union(0, 2) cập nhật 2 lần
+  + ...
+  + union(0, n-1) cập nhật n-1 lần
+  + Tổng số lần cập nhật = 1 + 2 + ... + (n-1) = n(n-1)/2 ~ n^2 / 2.
+
+(c) Quick-union (Độ phức tạp find(0)):
+- Đáp án: Theta(n)
+- Giải thích: Do union(p, q) đặt gốc của cây chứa p trỏ tới q, cây sẽ bị suy biến thành một chuỗi thẳng dạng: 0 -> 1 -> 2 -> ... -> n-1. Khi gọi find(0), ta phải duyệt từ 0 lên tận gốc n-1 (tốn n-1 bước) => Độ phức tạp là Theta(n).
+
+(d) Weighted quick-union (Độ phức tạp find(0)):
+- Đáp án: Theta(1)
+- Giải thích: Vì cây chứa đỉnh 0 luôn có kích thước lớn hơn các cây đơn lẻ nối vào sau đó, nên tất cả các đỉnh mới đều được nối trực tiếp vào 0. Đỉnh 0 luôn là gốc của cây (parent[0] = 0), nên lệnh find(0) trả về ngay lập tức => Độ phức tạp là Theta(1).

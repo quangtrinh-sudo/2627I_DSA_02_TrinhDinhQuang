@@ -1,0 +1,20 @@
+1. Đáp án các cặp thỏa mãn:
+Các cặp (p, q) có thể là tham số của lệnh union(p, q) gần nhất là:
+(4, 0), (4, 5), (5, 0), (6, 4), (8, 9)
+
+2. Giải thích ngắn gọn:
+Lệnh union() gần nhất bắt buộc phải nối nút gốc của cây nhỏ hơn vào nút gốc của cây lớn hơn (hoặc nối q vào p nếu 2 cây bằng kích thước).
+
+Xét các nút gốc hiện tại:
+- Cây gốc 4 (kích thước 8) chứa các cây con: gốc 0 (size 4), gốc 5 (size 2), gốc 6 (size 1).
+- Cây gốc 8 (kích thước 2) chứa cây con: gốc 9 (size 1).
+
+Thử từng cặp đề bài cho:
+- (0, 4): Cây 0 (size 4) và cây 4 (size 4) bằng nhau. Quy tắc nối q vào p -> 4 trỏ vào 0. Nhưng trên hình 0 trỏ vào 4 -> Loại.
+- (2, 3): 2 không phải là nút gốc -> Loại.
+- (4, 0): Cây 4 (size 4) và cây 0 (size 4) bằng nhau. Quy tắc nối q vào p -> 0 trỏ vào 4 -> ĐÚNG.
+- (4, 5): Root 4 (size 6) và Root 5 (size 2). Cây 5 nhỏ hơn nên 5 trỏ vào 4 -> ĐÚNG.
+- (5, 0): Root 5 (size 2) và Root 0 thuộc cây gốc 4 (size 6). Cây 5 nhỏ hơn nên 5 trỏ vào 4 -> ĐÚNG.
+- (5, 7): 5 không phải nút gốc ở bước cuối -> Loại.
+- (6, 4): Root 6 (size 1) nhỏ hơn Root 4 (size 7) -> 6 trỏ vào 4 -> ĐÚNG.
+- (8, 9): Root 8 (size 1) và Root 9 (size 1) bằng nhau -> 9 trỏ vào 8 -> ĐÚNG.

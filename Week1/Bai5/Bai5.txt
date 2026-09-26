@@ -1,0 +1,9 @@
+1. Đáp án:
+KHÔNG thể là biểu diễn parent-link của weighted quick union.
+
+2. Giải thích ngắn gọn:
+- Đếm số phần tử thuộc cây con gốc 0: gồm 7 phần tử {0, 2, 4, 3, 6, 1, 8}.
+- Theo mảng đề bài, parent[0] = 5 (tức là gốc 0 đã được nối vào gốc 5).
+- Theo quy tắc Weighted Quick Union, để cây gốc 0 trỏ vào gốc 5 thì kích thước cây gốc 5 trước khi nối phải LỚN HƠN HOẶC BẰNG kích thước cây gốc 0 (tức là phải >= 7 phần tử).
+- Khi đó, tổng số phần tử tối thiểu của toàn bộ cấu trúc phải là: 7 + 7 = 14 phần tử.
+- Tuy nhiên, mảng đề bài chỉ có tổng cộng 10 phần tử (từ 0 đến 9) -> Vô lý (14 > 10).

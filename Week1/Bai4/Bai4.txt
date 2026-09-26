@@ -1,0 +1,13 @@
+1. Đáp án:
+parent[8] có thể nhận các giá trị: 0, 4, 8
+
+2. Giải thích ngắn gọn:
+Từ mảng parent[] ta có:
+- Cây gốc 0 chứa các phần tử {0, 1, 2, 3} -> Kích thước = 4.
+- Cây gốc 4 chứa các phần tử {4, 5, 6, 7} -> Kích thước = 4.
+- Cây chứa phần tử 8 và 9 {8, 9} -> Kích thước = 2.
+
+Thử các trường hợp cho parent[8]:
+- parent[8] = 8: Phần tử 8 tự làm gốc của cây {8, 9} -> Hợp lệ.
+- parent[8] = 0: Nếu gộp cây 8 vào cây 0, vì kích thước cây 8 (size 2) < kích thước cây 0 (size 4) nên nút 8 sẽ trỏ vào 0 -> Hợp lệ.
+- parent[8] = 4: Nếu gộp cây 8 vào cây 4, vì kích thước cây 8 (size 2) < kích thước cây 4 (size 4) nên nút 8 sẽ trỏ vào 4 -> Hợp lệ.

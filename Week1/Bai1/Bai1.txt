@@ -1,0 +1,17 @@
+1. Giải thích lỗi:
+Trong vòng lặp for, khi i = p thì code sửa trực tiếp giá trị leader[p] = leader[q].
+Do đó, các phần tử đằng sau (i > p) thuộc cùng nhóm với p sẽ bị so sánh với giá trị MỚI của leader[p] chứ không phải giá trị cũ -> Bị bỏ sót, không được cập nhật.
+
+2. Testcase minh họa lỗi:
+- Cho n = 3 (mảng ban đầu: leader = [0, 1, 2]).
+- Gọi các lệnh: union(0, 1) rồi gọi tiếp union(0, 2).
+- Chọn i = 0 và j = 1 (thực tế 0 và 1 thuộc cùng 1 tập hợp).
+
+Diễn biến:
+- Sau union(0, 1): mảng thành [1, 1, 2].
+- Khi gọi union(0, 2) với p = 0, q = 2:
+  + Vòng lặp chạy i = 0: leader[0] bị đổi thành leader[2] = 2 -> mảng thành [2, 1, 2].
+  + Vòng lặp chạy i = 1: So sánh leader[1] == leader[0] (tức là 1 == 2 -> Sai), nên leader[1] giữ nguyên = 1.
+- Kết quả mảng cuối cùng: leader = [2, 1, 2].
+
+=> Kiểm tra find(0) = 2, find(1) = 1 (khác nhau), mặc dù 0 và 1 cùng thuộc 1 tập hợp -> Thuật toán bị sai.
