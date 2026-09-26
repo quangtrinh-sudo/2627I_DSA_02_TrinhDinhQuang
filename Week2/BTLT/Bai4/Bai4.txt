@@ -1,0 +1,6 @@
+BST Class: Overhead (16B) + root (8B) + n (4B) + padding (4B) = 32 bytes.
+
+Inner Node: Overhead (16B) + BST pointer (8B) + 5 pointers (40B) + count (4B) + padding (4B) = 72 bytes.
+
+Chi phí cho n node: ~ 72n bytes.
+-> ĐÁP ÁN: ~ 72n bytes

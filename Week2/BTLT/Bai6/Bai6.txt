@@ -1,0 +1,6 @@
+Hàm f(n) = n*(log n)^2 + 3n*sqrt(n) - 5n
+
+So sánh số mũ: 3n*sqrt(n) = 3n^1.5 (lớn nhất, át hết mấy cái còn lại).
+
+Bậc tăng trưởng thuộc O(nsqrt(n)).
+-> CHỌN: O(nsqrt(n)) (Đáp án 4)

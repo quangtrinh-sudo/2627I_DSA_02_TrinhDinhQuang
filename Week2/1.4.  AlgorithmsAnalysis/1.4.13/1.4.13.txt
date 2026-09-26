@@ -1,0 +1,26 @@
+Gia thiet:
+- Object Header = 16 bytes
+- Array Header = 24 bytes
+- Reference = 8 bytes
+- Padding = Lam tron len boi so cua 8
+
+a. Accumulator: 40 bytes
+   (Header 16 + int 4 + double 8 + double 8 = 36 -> Padding thanh 40 bytes)
+
+b. Transaction: 40 bytes
+   (Header 16 + String ref 8 + Date ref 8 + double 8 = 40 bytes)
+
+c. FixedCapacityStackOfStrings: 56 + 8C bytes
+   (Stack object 32 bytes + Array header 24 bytes + C references 8C bytes)
+
+d. Point2D: 32 bytes
+   (Header 16 + double x 8 + double y 8 = 32 bytes)
+
+e. Interval1D: 32 bytes
+   (Header 16 + double min 8 + double max 8 = 32 bytes)
+
+f. Interval2D: 96 bytes
+   (Header 16 + 2 refs 16 = 32 bytes + 2 doi tuong Interval1D 64 bytes = 96 bytes)
+
+g. Double: 24 bytes
+   (Header 16 + double value 8 = 24 bytes)

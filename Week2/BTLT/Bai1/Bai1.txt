@@ -1,0 +1,23 @@
+1.i chạy từ 10 đến n+5, mỗi lần tăng 2 => (n-5)/2 lần.
+-> Tilde: ~ (1/2)n
+-> Theta: Theta(n)
+
+2.i nhân đôi đến n^3 => log2(n^3) = 3*log2(n).
+-> Tilde: ~ 3 log2(n)
+-> Theta: Theta(log n)
+
+3.Vòng ngoài n lần, vòng trong cố định 100 lần => 100*n.
+-> Tilde: ~ 100n
+-> Theta: Theta(n)
+
+4.Vòng ngoài i^2 < n (sqrt(n) lần), vòng trong j*=3 (log3(n) lần).
+-> Tilde: ~ sqrt(n) log3(n)
+-> Theta: Theta(sqrt(n) log n)
+
+5.Vòng ngoài n lần, vòng trong j*=2 (log2(n) lần).
+-> Tilde: ~ n log2(n)
+-> Theta: Theta(n log n)
+
+6.Vòng i (n) * j (100) * [k, l gộp lại là n^2/2 lần] = 50n^3.
+-> Tilde: ~ 50n^3
+-> Theta: Theta(n^3)

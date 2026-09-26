@@ -1,0 +1,6 @@
+Hàm f(n) = 2n^2 + 2n + 6 log2(n)
+
+Lấy thằng có bậc cao nhất là 2n^2.
+
+Bậc lớn nhất là n^2.
+-> CHỌN: O(n^2)

@@ -1,0 +1,6 @@
+Vòng i, j: n*(n+1)/2 ~ (1/2)n^2.
+
+Vòng k: bước nhảy n/100 nên chạy đúng 100 lần.
+
+Nhân lại: (1/2 n^2) * 100 = 50n^2.
+-> CHỌN: ~ 50n^2 (Đáp án 2)

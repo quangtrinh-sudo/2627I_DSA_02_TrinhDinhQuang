@@ -1,0 +1,20 @@
+a. N + 1 ~ N
+   (Bỏ hằng số 1 khi N tiến ra vô cùng)
+
+b. 1 + 1/N ~ 1
+   (Vì 1/N tiến về 0 khi N -> ∞)
+
+c. (1 + 1/N)(1 + 2/N) = 1 + 3/N + 2/N^2 ~ 1
+   (Các số hạng chứa N ở mẫu tiến về 0)
+
+d. 2N^3 - 15N^2 + N ~ 2N^3
+   (Giữ lại số hạng có bậc cao nhất)
+
+e. lg(2N) / lgN = (1 + lgN) / lgN = 1 + 1/lgN ~ 1
+   (Vì 1/lgN tiến về 0)
+
+f. lg(N^2 + 1) / lgN ~ lg(N^2) / lgN = 2*lgN / lgN = 2
+   (Vì N^2 + 1 ~ N^2 khi N rất lớn)
+
+g. N^100 / 2^N ~ 0
+   (Hàm mũ 2^N tăng nhanh hơn đa thức N^100 rất nhiều)

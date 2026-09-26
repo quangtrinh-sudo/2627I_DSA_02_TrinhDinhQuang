@@ -1,0 +1,13 @@
+a. ~ N  (hoặc O(N))
+   Giải thích: Vòng lặp ngoài n giảm một nửa mỗi bước (N, N/2, N/4, ..., 1).
+   Tổng số lần lặp vòng trong là: N + N/2 + N/4 + ... + 1 ≈ 2N -> Bậc tăng là ~ N.
+
+b. ~ N  (hoặc O(N))
+   Giải thích: Vòng lặp ngoài i nhân đôi mỗi bước (1, 2, 4, 8, ..., < N).
+   Vòng lặp trong chạy i lần.
+   Tổng số lần lặp: 1 + 2 + 4 + 8 + ... + 2^k ≈ 2N -> Bậc tăng là ~ N.
+
+c. ~ N lg N  (hoặc O(N log N))
+   Giải thích: Vòng lặp ngoài nhân đôi i mỗi bước nên chạy xấp xỉ lg N lần.
+   Vòng lặp trong luôn chạy đúng N lần.
+   Tổng số lần lặp: N * lg N -> Bậc tăng là ~ N lg N.

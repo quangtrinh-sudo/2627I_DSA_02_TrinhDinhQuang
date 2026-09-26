@@ -1,0 +1,42 @@
+1. Mã nguồn tham chiếu:
+   for (int i = 0; i < N; i++) {
+       for (int j = i + 1; j < N; j++) {
+           for (int k = j + 1; k < N; k++) {
+               if (a[i] + a[j] + a[k] == 0) {
+                   count++;
+               }
+           }
+       }
+   }
+
+2. Số lần kiểm tra bộ ba (Số lần chạy thân vòng lặp trong cùng):
+   Số cách chọn 3 chỉ số (i, j, k) thỏa mãn 0 <= i < j < k < N là tổ hợp chập 3 của N:
+   C(N, 3) = N*(N-1)*(N-2) / 6 = (N^3 - 3N^2 + 2N) / 6 ~ N^3 / 6
+
+3. Chi tiết các phép toán:
+
+   a) Phép cộng số học (+):
+      - Với mỗi bộ ba, thực hiện 2 phép cộng: (a[i] + a[j]) + a[k]
+      - Tổng số phép cộng = 2 * C(N, 3) = N*(N-1)*(N-2) / 3 ~ N^3 / 3
+
+   b) Phép so sánh (== 0):
+      - Với mỗi bộ ba, thực hiện 1 phép so sánh giá trị với 0
+      - Tổng số phép so sánh = C(N, 3) = N*(N-1)*(N-2) / 6 ~ N^3 / 6
+
+   c) Phép truy xuất mảng (Array Access):
+      - Với mỗi bộ ba, đọc dữ liệu từ mảng 3 lần (a[i], a[j], a[k])
+      - Tổng số lần truy xuất = 3 * C(N, 3) = N*(N-1)*(N-2) / 2 ~ N^3 / 2
+
+4. Bảng tổng hợp mô hình chi phí:
+   ---------------------------------------------------------------------
+   Phép toán                   | Tần suất chính xác      | Bậc tăng
+   ---------------------------------------------------------------------
+   Số bộ ba kiểm tra           | N(N-1)(N-2) / 6         | ~ N^3 / 6
+   Phép so sánh giá trị (== 0) | N(N-1)(N-2) / 6         | ~ N^3 / 6
+   Phép cộng (+)               | N(N-1)(N-2) / 3         | ~ N^3 / 3
+   Truy xuất mảng              | N(N-1)(N-2) / 2         | ~ N^3 / 2
+   ---------------------------------------------------------------------
+
+5. Kết luận:
+   - Bậc tăng trưởng của thời gian chạy bị chi phối bởi số hạng N^3.
+   - Độ phức tạp thời gian tổng quát là ~ N^3 / 6 (hoặc Theta(N^3)).

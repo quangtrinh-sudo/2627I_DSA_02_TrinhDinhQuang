@@ -1,0 +1,6 @@
+2 vòng i, j: chọn cặp (i, j) trong n^2 phần tử => (n^2)^2 / 2 = (1/2)n^4.
+
+Vòng k: k*=2 đến n^2 => log2(n^2) = 2 log2(n).
+
+Tích lại: (1/2 n^4) * (2 log2 n) = n^4 log2 n.
+-> CHỌN: ~ n^4 log2 n (Đáp án 4)
