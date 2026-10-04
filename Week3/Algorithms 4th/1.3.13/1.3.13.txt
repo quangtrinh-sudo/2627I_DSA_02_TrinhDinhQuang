@@ -1,0 +1,11 @@
+Các chuỗi không thể là output: b, c, d
+
+Giải thích:
+
+Hàng đợi (Queue) hoạt động theo cơ chế FIFO (First-In, First-Out) - phần tử vào trước sẽ ra trước.
+
+Vì các số từ 0 đến 9 được enqueue theo đúng thứ tự tăng dần, nên các thao tác dequeue chỉ có thể lấy các phần tử ra theo đúng thứ tự 0 1 2 3 4 5 6 7 8 9.
+
+a: Có thể xảy ra.
+
+b, c, d: Không thể xảy ra vì xuất hiện các số in ra sai thứ tự tăng dần (ví dụ: in 4 trước 0, in 6 trước 5,...).

@@ -1,0 +1,12 @@
+public Item peek() {
+    if (isEmpty()) {
+        throw new NoSuchElementException("Stack underflow");
+    }
+    return first.item; // Đối với cài đặt bằng Danh sách liên kết
+    // return a[N - 1]; // Đối với cài đặt bằng Mảng
+}
+Mô tả:
+
+Kiểm tra nếu stack rỗng thì ném ra ngoại lệ NoSuchElementException.
+
+Trả về giá trị phần tử ở đỉnh stack (first.item hoặc a[N - 1]) nhưng không xóa phần tử đó hay thay đổi con trỏ/kích thước của stack.

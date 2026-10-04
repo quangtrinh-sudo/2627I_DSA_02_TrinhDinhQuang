@@ -1,0 +1,2 @@
+Kết quả khi N = 50:110010   Mô tả tổng quan (1 câu):
+Đoạn code có chức năng chuyển đổi một số nguyên dương $N$ từ hệ thập phân sang biểu diễn ở hệ nhị phân và in ra màn hình.

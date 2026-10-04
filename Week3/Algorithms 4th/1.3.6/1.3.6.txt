@@ -1,0 +1,7 @@
+Đoạn code trên dùng để đảo ngược thứ tự các phần tử trong hàng đợi q.
+
+Giải thích ngắn gọn:
+
+Vòng while 1: Lần lượt lấy tất cả phần tử ra khỏi queue q (FIFO) rồi push vào stack.
+
+Vòng while 2: Lấy từng phần tử từ stack ra bằng pop rồi enqueue lại vào queue q. Do đặc tính LIFO (vào sau ra trước) của stack, các phần tử quay lại queue sẽ mang thứ tự ngược lại so với ban đầu.
