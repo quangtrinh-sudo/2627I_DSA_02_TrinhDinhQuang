@@ -1,0 +1,5 @@
+- Insertion Sort (Chèn): NÊN DÙNG
+  -> Vì chèn phần tử vào LinkedList cực nhanh (chỉ cần đổi con trỏ, không phải dời mảng).
+
+- Selection Sort (Chọn): KHÔNG NÊN DÙNG
+  -> Vì vẫn phải duyệt tìm số nhỏ nhất, nhưng swap con trỏ lại rắc rối hơn mảng mà không nhanh hơn tí nào.
