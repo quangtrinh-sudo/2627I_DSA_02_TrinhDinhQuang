@@ -1,0 +1,5 @@
+Insertion sort chạy nhanh hơn.
+
+Giải thích: Mảng gồm các key bằng nhau là trường hợp tốt nhất của Insertion sort, chỉ tốn
+$O(N)$ (mỗi phần tử chỉ so sánh 1 lần rồi dừng). Trong khi Selection sort vẫn phải duyệt đủ 
+$O(N^2)$ lần so sánh.

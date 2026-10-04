@@ -1,0 +1,3 @@
+Thời gian chạy là bậc hai (O(N^2)).
+Giải thích: Với mảng ngẫu nhiên chỉ nhận 3 giá trị phân biệt, số cặp nghịch thế (inversions) vẫn có độ lớn là O(N^2). 
+Do thời gian chạy của Insertion sort tỉ lệ thuận với số cặp nghịch thế, nên thời gian chạy vẫn là bậc hai.

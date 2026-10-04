@@ -1,0 +1,7 @@
+Vòng lặp trong có dạng: for (int j = i; j > 0 && a[j] < a[j-1]; j--)
+
+Điều kiện j > 0 bị false: Mảng sắp xếp giảm dần (ví dụ: $N, N-1, ..., 1$). Phần tử 
+được chèn luôn nhỏ hơn tất cả các phần tử đứng trước nó nên bị đẩy lùi về hẳn chỉ số 0.
+
+Điều kiện a[j] < a[j-1] bị false: Mảng đã sắp xếp tăng dần (ví dụ: $1, 2, ..., N$). Vòng 
+lặp dừng ngay lập tức ở lần so sánh đầu tiên ($j = i$).

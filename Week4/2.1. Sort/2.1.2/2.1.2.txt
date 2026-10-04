@@ -1,0 +1,3 @@
+Số lần đổi chỗ tối đa: N lần.
+
+Số lần đổi chỗ trung bình: 2 lần.

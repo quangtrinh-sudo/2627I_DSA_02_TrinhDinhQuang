@@ -1,0 +1,3 @@
+Selection sort chạy nhanh hơn.
+Giải thích: Với mảng sắp xếp ngược, cả hai thuật toán đều mất khoảng N^2 / 2 lần so sánh. 
+Tuy nhiên, Insertion sort phải thực hiện khoảng N^2 / 2 lần đổi chỗ (rất tốn chi phí), trong khi Selection sort chỉ mất đúng N lần đổi chỗ.

@@ -1,0 +1,3 @@
+Ví dụ mảng N phần tử: Mảng giảm dần từ N về 1 (Ví dụ với N = 5: 5 4 3 2 1).
+
+Giải thích: Khi mảng sắp xếp giảm dần, mỗi lần so sánh phần tử tiếp theo đều nhỏ hơn giá trị min hiện tại, dẫn đến số lần phải cập nhật lại biến min là nhiều nhất.
