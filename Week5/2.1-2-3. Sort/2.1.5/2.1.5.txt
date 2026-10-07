@@ -1,0 +1,4 @@
+Với mỗi điều kiện trong hai điều kiện của vòng for bên trong insertion sort, hãy mô tả một mảng...
+- Vòng lặp for bên trong thường có 2 điều kiện để chạy: (1) j > 0 và (2) a[j-1] > temp.
+- Điều kiện (1) luôn false khi vòng lặp kết thúc (tức là j luôn lùi về tận 0): Xảy ra khi mảng ban đầu được sắp xếp giảm dần (ví dụ: [5, 4, 3, 2, 1]). Lúc này, phần tử đang xét luôn nhỏ hơn toàn bộ phần tử đã sắp xếp nên phải lùi về đầu mảng.
+- Điều kiện (2) luôn false khi kết thúc (tức là dừng sớm vì a[j-1] <= temp): Xảy ra khi mảng ban đầu đã được sắp xếp tăng dần sẵn (ví dụ: [1, 2, 3, 4, 5]). Phần tử đang xét luôn lớn hơn phần tử liền trước nên vòng lặp kết thúc ngay lập tức.

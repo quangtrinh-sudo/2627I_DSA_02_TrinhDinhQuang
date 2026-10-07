@@ -1,0 +1,3 @@
+Trong thuật toán selection sort, một phần tử bất kì cần đến tối đa bao nhiêu lần đổi chỗ...
+- Tối đa: Một phần tử bất kì có thể bị đổi chỗ tối đa (N - 1) lần để được sắp vào đúng chỗ. (Ví dụ: phần tử có giá trị lớn nhất nằm ở đầu mảng sẽ liên tục bị hoán vị đẩy lùi về phía sau).
+- Trung bình: Vì tổng số lần đổi chỗ của cả thuật toán luôn là N (hoặc N-1), và mỗi lần đổi chỗ tác động lên 2 phần tử, nên trung bình một phần tử bất kì sẽ cần khoảng O(1) lần đổi chỗ (cụ thể là xấp xỉ 2 lần).

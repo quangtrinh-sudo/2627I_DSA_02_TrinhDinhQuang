@@ -1,0 +1,3 @@
+Cho ví dụ về một mảng N phần tử mà khi chạy thuật toán selection sort có số lần cập nhật giá trị min là tối đa.
+- Để số lần cập nhật giá trị biến min là tối đa, phần tử đang duyệt đến luôn phải nhỏ hơn giá trị min hiện tại. Điều này xảy ra khi mảng đầu vào được sắp xếp theo thứ tự giảm dần nghiêm ngặt.
+- Ví dụ với mảng N = 5 phần tử: [5, 4, 3, 2, 1].
